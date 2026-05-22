@@ -57,3 +57,19 @@ ng-container is used to wrap the else part of the condition and it will not add 
 <p style="font-weight: bold;">Diff div vs ngcontainer:</p>
 <p>div is only used one structural directive</p>
 <p>ngcontainer is used for multi structural directives means *ngif, *ngFor, etc. used in same element level</p>
+
+
+<!-- 
+
+this is real use case--
+
+<ng-container *ngFor="let p of products">
+  <app-child 
+        [product]="p"
+        *ngIf="p.stock > 0"
+        (productClicked)="onProductClicked($event)">
+
+  </app-child>
+</ng-container> 
+
+-->
