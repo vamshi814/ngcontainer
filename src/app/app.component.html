@@ -1,5 +1,16 @@
 <h2>ng container</h2>
 
+<ng-container *ngIf="toggle; else toggleOff">
+  <p>Toggle is true</p>
+</ng-container>
+
+<ng-template #toggleOff>
+  <p>Toggle is false</p>
+</ng-template>
+
+<button (click)="changeToggle()">Toggle</button>
+
+<hr>
 <p>extra div is added using div</p>
 <div *ngFor="let item of items">
   <ul>

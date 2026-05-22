@@ -9,5 +9,9 @@ export class AppComponent {
   title = 'ngcontainer';
 
   items = ['Item 1', 'Item 2', 'Item 3'];
-  
+
+  toggle: boolean = true;
+  changeToggle(){
+    this.toggle = !this.toggle;
+  }
 }
