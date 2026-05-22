@@ -37,6 +37,23 @@ ng-container is used to wrap the else part of the condition and it will not add 
 
 <hr>
 
+<p>ngtemplate and div</p>
+<ng-template #toggleOn>
+  <p>toggled on</p>
+</ng-template>
+<div *ngTemplateOutlet="toggleOn">
+  <p>this is a test1</p>
+</div>
+<hr>
+
+<p>ngtemplate and ngcontainer</p>
+
+<ng-template #toggleOn2>
+  <p>this is a test2</p>
+</ng-template>
+<ng-container *ngTemplateOutlet="toggleOn2"> </ng-container>
+<hr>
+
 <p style="font-weight: bold;">Diff div vs ngcontainer:</p>
 <p>div is only used one structural directive</p>
 <p>ngcontainer is used for multi structural directives means *ngif, *ngFor, etc. used in same element level</p>
