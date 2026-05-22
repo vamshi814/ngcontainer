@@ -1,5 +1,12 @@
 <h2>ng container</h2>
 
+<p>
+
+< ng-container *ngIf="toggle; else toggleOff" >  else part expects ngtemplate reference variable which is defined using <br>
+<strong>ng-template</strong> and <strong>#templateName</strong>. 
+<br>
+ng-container is used to wrap the else part of the condition and it will not add any extra div in the DOM.
+</p>
 <ng-container *ngIf="toggle; else toggleOff">
   <p>Toggle is true</p>
 </ng-container>
