@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngcontainer';
+
+  items = ['Item 1', 'Item 2', 'Item 3'];
+  
 }

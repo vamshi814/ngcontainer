@@ -1,2 +1,24 @@
 <h2>ng container</h2>
 
+<p>extra div is added using div</p>
+<div *ngFor="let item of items">
+  <ul>
+    <li>{{item}}</li>
+  </ul>
+  
+</div>
+<hr>
+<p>extra div is not added using ng-container</p>
+
+<ng-container *ngFor="let item of items">
+    <ul>
+      <li>{{item}}</li>
+    </ul>
+  
+</ng-container>
+
+<hr>
+
+<p style="font-weight: bold;">Diff div vs ngcontainer:</p>
+<p>div is only used one structural directive</p>
+<p>ngcontainer is used for multi structural directives means *ngif, *ngFor, etc. used in same element level</p>
